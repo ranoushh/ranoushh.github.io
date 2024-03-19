@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Rana's Planet Form Calculator</title>
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/6989/6989360.png"
+    />
+    <script src="form.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+      }
+
+      #mycanvas {
+        position: relative;
+      }
+
+      form {
+        position: absolute; /* Position form relative to the canvas */
+        top: 50%; /* Align form vertically in the middle */
+        left: 50%; /* Align form horizontally in the middle */
+        transform: translate(-50%, -50%); /* Center the form */
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.8
+        ); /* Set form background color */
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      input[type="number"] {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <canvas id="mycanvas" width="1100" height="600"></canvas>
+
+      <form>
+        <h1>Calculate Your Weight On Other Planets!</h1>
+
+        <label for="quantity" text-align="center"><b>Your Weight: </b></label>
+        <input
+          type="number"
+          placeholder="enter your weight in pounds..."
+          id="weight"
+          required
+        />
+
+        <button onclick="calculate()">Calculate</button>
+        <button type="reset">Reset</button>
+      </form>
+
+      <img
+        hidden="hidden"
+        id="planet-bg"
+        width="800"
+        height="600"
+        src="https://i.pinimg.com/originals/6d/09/ca/6d09ca19f66908c15d0e86176155c40c.jpg"
+        alt="Planet Background"
+      />
+    </div>
+  </body>
+</html>
