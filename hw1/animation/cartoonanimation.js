@@ -3,15 +3,15 @@
 var canvas = undefined;
 var canvasContext = undefined;
 var cloudSprite = {
-  img0: "./cloudsprites/tile000.png",
-  img1: "./cloudsprites/tile001.png",
-  img2: "./cloudsprites/tile002.png",
-  img3: "./cloudsprites/tile003.png",
-  img4: "./cloudsprites/tile004.png",
-  img5: "./cloudsprites/tile005.png",
-  img6: "./cloudsprites/tile006.png",
-  img7: "./cloudsprites/tile007.png",
-  img8: "./cloudsprites/tile008.png",
+  img0: "./cloudSprites/tile000.png",
+  img1: "./cloudSprites/tile001.png",
+  img2: "./cloudSprites/tile002.png",
+  img3: "./cloudSprites/tile003.png",
+  img4: "./cloudSprites/tile004.png",
+  img5: "./cloudSprites/tile005.png",
+  img6: "./cloudSprites/tile006.png",
+  img7: "./cloudSprites/tile007.png",
+  img8: "./cloudSprites/tile008.png",
 };
 var grassSprite = {
   gif0: "./grass-gif-sprite/frame_00_delay-0.08s.png",
