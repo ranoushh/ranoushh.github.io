@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Audio Lab</title>
+    <link
+      rel="icon"
+      href="https://images.vexels.com/media/users/3/270787/isolated/preview/c2b289d29af9a7e39c56b7bb26e638af-rainbow-cassette-icon.png"
+    />
+
+    <script src="audio.js"></script>
+
+    <style>
+      body {
+        font-family: Garamond;
+        text-align: center;
+        position: relative;
+      }
+      #text {
+        width: 45%; /* Adjust the width as per your preference */
+        height: auto;
+        top: 15px;
+        position: absolute; /* Add position absolute */
+        left: 0; /* Position at the left */
+      }
+      #pause {
+        position: absolute;
+        bottom: 20px; /* Adjust the distance from the bottom */
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <canvas id="myCanvas" width="750" height="600"></canvas> -->
+
+    <audio id="pink">
+      <source src="audios/spy-164938.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="red">
+      <source src="audios/better-day-186374.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="orange">
+      <source src="audios/summer-walk-152722.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="yellow">
+      <source
+        src="audios/stream-in-the-flower-garden-200094.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="green">
+      <source src="audios/please-calm-my-mind-125566.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="blue">
+      <source
+        src="audios/the-best-jazz-club-in-new-orleans-164472.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+
+    <img id="text" src="cooltext457123471334184.png" />
+
+    <div class="portfolio-link">
+      <a href="https://ranoushh.github.io/">Rana's Portfolio</a>
+    </div>
+
+    <img src="cassette.webp" usemap="#image-map" />
+
+    <map name="image-map">
+      <area
+        alt="Pink"
+        href="javascript:playAudio('pink')"
+        coords="49,186,459,204"
+        shape="rect"
+      />
+      <area
+        alt="Red"
+        href="javascript:playAudio('red')"
+        coords="52,205,459,224"
+        shape="rect"
+      />
+      <area
+        alt="Orange"
+        href="javascript:playAudio('orange')"
+        coords="52,224,459,242"
+        shape="rect"
+      />
+      <area
+        alt="Yellow"
+        href="javascript:playAudio('yellow')"
+        coords="52,243,459,262"
+        shape="rect"
+      />
+      <area
+        alt="Green"
+        href="javascript:playAudio('green')"
+        coords="52,262,458,280"
+        shape="rect"
+      />
+      <area
+        alt="Blue"
+        href="javascript:playAudio('blue')"
+        coords="50,281,458,300"
+        shape="rect"
+      />
+    </map>
+    <button id="pause" onclick="pauseAudio()" type="button">Pause Audio</button>
+  </body>
+</html>
